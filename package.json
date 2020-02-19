@@ -1,7 +1,7 @@
 {
   "name": "gatsby-transformer-gherkin",
   "description": "Gatsby plugin for transforming sourced gherkin files",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "author": "Richard Ruiter <richard.ruiter@gmail.com>",
   "repository": {
