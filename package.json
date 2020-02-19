@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-transformer-gherkin",
+  "description": "Gatsby plugin for transforming sourced gherkin files",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Richard Ruiter <richard.ruiter@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardruiter/gatsby-transformer-gherkin.git"
+  },
+  "dependencies": {
+    "@cucumber/gherkin": "^10.0.0"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer-plugin",
+    "gherkin",
+    "cucumber",
+    "bdd"
+  ]
+}
