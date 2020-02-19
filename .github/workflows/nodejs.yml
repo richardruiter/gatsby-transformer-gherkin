@@ -1,18 +1,19 @@
-name: npm-publish
+name: Publish
+
 on:
-  push:
-    branches:
-      - master # Change this to your default branch
+  release:
+    types: [published]
+
 jobs:
-  publish-npm:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      # - run: npm ci
-      - run: npm publish
+      - run: yarn install
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
